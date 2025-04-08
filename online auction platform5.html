@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Computer Auction</h1>        
+    </header>
+
+    <section class="auction-items">
+        <article class="item" id="item1">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgHCtE6geVKmi5bmzuakyCDSVCN-1wHvUXKt6TTXw5Inhrj-9FNNqBZkn95SL11GEbBHbgvBZsOIC9qTTzpDXtvXl2ywyBPzdKrkduFRuICzcYvh5ZKDFaGOgu0oETy4mTV52Vbw&usqp=CAc" alt="HD moniter" height="350" width="100">
+            <h2>HD Monitor</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="bid1">Enter Your Bid:</label>
+            <input type="number" id="bid1" class="new-bid" min="751" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT-dqpZ1lWgd-xO9xF4zcOLT2pglllHw45HHjfXOLYP22QxqB7-fsADp7dDK2iWCx82WgKnNCjGKjN0g8eKgy3dw7Yk8yEhAkqqpR6QdwHVXdhjyYlLrMTVQp7UwtfdvEsZ4em8P17hvA&usqp=CAc" alt="Ho moniter + keybord " height="350" width="100">
+            <h2> Hp moniter+Keybord </h2>
+            <p>Starting Bid: $570</p>
+            <p>Current Bid: <span class="current-bid">$710</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item2','bid2')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSeb3vp3qmbSjP2w-vk2WYuR_1MvPyZsrTps9rXOwA-cIuKCxH5r_kuL3yq3slCyD63iL4TnFacO8pE4Vzt9eBtwTykQ_NOXYfQQHqgNnv0MhOvqJ4mvZ_gKDEM3FeNLFXmbOnY9Q4&usqp=CAc" alt="ASUS moniter" height="350" width="100">
+            <h2> ASUS moniter</h2>
+            <p>Starting Bid: $400</p>
+            <p>Current Bid: <span class="current-bid">$850</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item3', 'bid3')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQZISDnPMmNjlU9CYmCVKOkatKBq0KEgLUavCjZRfzUoTNW3Y3aegif7xRyG1niYGqRH7JncV5tS_3l7RWXlxb6OSftnejgPRW0iwoyeknrNdk7mIeC6QmrV1lef55ClW_DNxa7MnUwDA&usqp=CAc" alt="Moniter" height="350" width="100">
+            <h2>Moniter </h2>
+            <p>Starting Bid: $200</p>
+            <p>Current Bid: <span class="current-bid">$510</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item4', 'bid4')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQws8mShMYPW0fVE-IuSjQRiQMMI3mpL8zDdSJKCY58hY8NpExa6KBwTFUTnsS_4aHM1uo7PM6buv61fULQ2F8a5teGauqO7m1Kmi7qnRCy7loqOkp6zPkQ" alt="acer laptop" height="350" width="100">
+            <h2> acer laptop</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item5', 'bid5')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTHyaA0ucGKiOcfU4w-mh2izA34xyBd0EGrb0v3joUHmMD1MW8BgKZcgx9NOjG60yR6H7nca2Xu3bbJ1eEz9GJkbx-92gNJvrWbDnygV_laFyz-97S09XvqSw" alt="acer laptop" height="350" width="100">
+            <h2> acer laptop</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item6', 'bid6')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTjeB40FqVAKbJq9BouJXdTzyQoAylVAaFW9GI87NeA3lorlNhMXcZfFRSa_xdW4I9CyQd8ZQRDymYKtV_xu5BtQU8fX-wVaRaKzBxf4qq6gfbYWhVc2xSk" alt="hp laptop" height="350" width="100">
+            <h2> hp laptop</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item7', 'bid7')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTmojAYI9N-o9R7cz3pPbSQDaQAvrakeQ4syjUdETcn6Et4vBeI7mf5mm4J-yRxNyVgVCGjPE6-9Avr016rpDAmqN5X0hvfhpeDQSU0uosIw3K6Rgo5GleP" alt="hp moniter" height="350" width="100">
+            <h2> hp moniter </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item8', 'bid8')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQOQOHJN5u2mfz4bZuA7-nlOJ5MVeU0rTkwHIkXCy_On2Y5gTMBrxHNF9qrt0tBQdxPvkZYH1idkh77z0sPWrAUTBYtv4yUSOQw4eJN2-WJwHa8gkK9Y-xNkQ" alt="Lenovo moniter" height="350" width="100">
+            <h2> Lenovo moniter</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item9', 'bid9')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT_tzXviNrKxDaVHZ2ve0yc_Wdyu9bcRYvo92xxLiYT18ZRnGBL03_eMROfvgXKR9zhsPG9d9rE9pUdIIcj-KkH8H6i5cvB&usqp=CAE" alt="Apple moniter" height="350" width="100">
+            <h2> Apple moniter</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item10', 'bid10')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQQKAaZOLawlQfs6CAfOOEZh0ey0S9Q0Bq7ighNnZiYbC6Nv2or18hjnyPQM9k4S_1jCaGoS33M9WCVkzJSNCW1_NoJ3-kD3bgi2ie72wA1Nm5aDDX56HbnoA&usqp=CAE" alt="ASUS moniter" height="350" width="100">
+            <h2>ASUS moniter </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item11', 'bid11')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXfw3mpHSRYH38N8JtO2oJEi1GkURfXlDHP2gxCwj3TDaQA0fPeq-ZPRf77hkA5SsXkvT3HJZRy_kWCsoKbhIYnSCC-6-qhS-tFd6yblpJjIyXPRH1X7fv&usqp=CAE" alt="hp moniter" height="350" width="100">
+            <h2>hp moniter </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Computer">Enter Your Bid:</label>
+            <input type="number" class="new-bid"  min="76" required>
+            <button type="button" onclick="submitBid('item12', 'bid12')" >Submit Bid</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Computer Auction. All rights reserved.</p>
+    </footer>
+<script src="script2.js"></script>
+</body>
+</html>

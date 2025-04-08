@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport gears auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Sports gear Auction</h1>        
+    </header>
+    <section class="auction-items">
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0fHIeu-tPC84sYDpT7HzcwKChvxqqN39gw&s" alt="Bicycle safety kit" height="350" width="100">
+            <h2>Bicycle safety kit </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="submit" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyaG0-M4VGtCqXUlfplCcA1CdQxeEdWhovQ&s" alt="Football" height="350" width="100">
+            <h2> Football</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item2', 'bid2')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5gxpefRs388aZMh4Cv1n8zRRjxfZbuFTOaZ_m97JChXxFyX5I7kNZ-lz3WqKbOxmTF0&usqp=CAU" alt="Football" height="350" width="100">
+            <h2> Football</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item3', 'bid3')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvkqh6PH3fNuJaTCyFLQaJ6UcMpVLolYOOvg&s" alt="Knee pad" height="350" width="100">
+            <h2> Knee pad</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item4', 'bid4')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSD7t-12q0B333V6666iGaskXr5kyX5Gs6lA&s" alt="Basketball" height="350" width="100">
+            <h2> Basketball</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item5', 'bid5')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGEogysHooZLIOdeFCwiw4VZpTvZV0CcicXg&s" alt="Golf set" height="350" width="100">
+            <h2> Golf set</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item6', 'bid6')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://golfoy.com/media/wysiwyg/2024/landing/four_width/Taylormade-RBZ-SpeedLite-bag.jpg" alt="Golf set" height="350" width="100">
+            <h2> Golf set</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item7', 'bid7')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://m.media-amazon.com/images/I/61VJCxFbTaL._AC_UF1000,1000_QL80_.jpg" alt="Tennis racket" height="350" width="100">
+            <h2> Tennis racket</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item8', 'bid8')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hXQ3Y07_UUUzzVN5NcZlc3wNVpZwq-t3CQ&s" alt="Hockey stick" height="350" width="100">
+            <h2>Hockey stick </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item9', 'bid9')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLDPWCd7y8dIfh1y2Aw4GUDepAcOAaNE6geu1c9c5OJsic0ZFoin2ccM-ukh9YjFJO_A2Yi-bi0eJTf2dhlAGXa3oqh1OrNPbI6esqHLs1RmFhFt1KohVOt8hnNDIMmbcaLMPcYfI&usqp=CAc" alt="Badminton racket" height="350" width="100">
+            <h2> Badminton racket</h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item10', 'bid10')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT3a-fSVpUpndBDWK8-CCyLSZLRWxTkMWqrbsGI8YNRpC4HeAA2OUythqm-lEoyQQXgYJmw2K33SXaZ1wB56d9zWggTdJ9raRjKkw9yGKJlPyl-Y5t0dXWKE_SsW07kfDLHBKebuw&usqp=CAc" alt="Badminton racket" height="350" width="100">
+            <h2>Badminton racket </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item11', 'bid11')">Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRX9cUiEbJGUlQbMytgddBM7b-uriDXAuSHnisSDnSdCM0TtshUGfklYUdFpod8GGDLJL2FWKk8LVpu9VSIY_HuNlVFLLHDYLJT1COPWw1lSLYf41WEVnlAAfA1rCl1Fa19E0F4Fw&usqp=CAc" alt="Tennis table" height="350" width="100">
+            <h2> Tennis table </h2>
+            <p>Starting Bid: $500</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Sports">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Sports" min="76" required>
+            <button type="button" onclick="submitBid('item12', 'bid12')">Submit Bid</button>
+        </article>
+    </section>
+
+        <footer>
+            <p>&copy; 2024 sports gear Auction. All rights reserved.</p>
+        </footer>
+    
+    <script src="script2.js"></script>
+</body>
+</html>

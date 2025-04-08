@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Wine Auction</h1>        
+    </header>
+
+    <section class="auction-items">
+        <article class="item">
+            <img src="https://chetvineyard.co.uk/wp-content/uploads/2023/04/CHET-REDWING-2000px-optimised.jpeg" alt="wine" height="350" width="100">
+            <h2> Redwing dry rose</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item1','bid1')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjY7KMPtA5Dl6BWZFWqCQfTngUmVqJDk7QA&s" alt="wine" height="350" width="100">
+            <h2> Cartier irish cream</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item2','bid2')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9i0v9sXozlv2s4350bV2MAR42z4kcljPClQ&s" alt="wine" height="350" width="100">
+            <h2>Free bird </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item3','bid3')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVeuoF5omCEqtonb8ZZQd4Rpe7I3ucLX-nA&s" alt="wine" height="350" width="100">
+            <h2>Ravera wines </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item4','bid4')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://www.vineut.com/wp-content/uploads/2024/09/petrus-1973-magnum-324x719.jpg" alt="wine" height="350" width="100">
+            <h2> Chateau petrus</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item5','bid5')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://www.everythingwine.ca/media/catalog/product/9/2/925750_santa_rita_heroes_cab_sauv_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=366&width=366&canvas=366:366" alt="wine" height="350" width="100">
+            <h2> Santa Rita heroes</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item6','bid6')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66Q8Eu_5BOg2vwc9H8xJt9pdr6LzbOHM1dA&s" alt="wine" height="350" width="100">
+            <h2>Bedoba saperavi </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item7','bid7')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUEQd_lCmINLhKJENR8R27jg9A17qVzV1Bg&s" alt="wine" height="350" width="100">
+            <h2> Magic cellar</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item8','bid8')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ38AxyjQTf2XsMcbql7QzrANJgtjiPki8lA&s" alt="wine" height="350" width="100">
+            <h2>Barolo mosconi </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item9','bid9')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvWCIz_PPeiO69AkVbfUg_NCKexA7iVJA3Q&s" alt="wine" height="350" width="100">
+            <h2>Red wine </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item10','bid10')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmPVQEMTjMRA_ENJO17ZGpo2QwrNz7H7nYA&s" alt="wine" height="350" width="100">
+            <h2>Marques de riscal </h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item11','bid11')" >Submit Bid</button>
+        </article>
+
+        <article class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZrJok2T8uucnSykc7LcTf4jHG0Q806b0lww&s" alt="" height="350" width="100">
+            <h2> Zolo malbec reserve</h2>
+            <p>Starting Bid: $600</p>
+            <p>Current Bid: <span class="current-bid">$750</span></p>
+            <label for="Wine">Enter Your Bid:</label>
+            <input type="number" class="new-bid" name="Wine" min="76" required>
+            <button type="button" onclick="submitBid('item12','bid12')" >Submit Bid</button>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; 2024 Wine Auction. All rights reserved.</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

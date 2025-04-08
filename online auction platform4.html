@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Clothes Auction</h1>
+    </header>
+
+    <section class="auction-items">
+       
+
+        <article class="item" data-id="1">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTOZsGmDHKgOl5AsttHrwltGjcJKnBREVmVhzjSXr50Ps6x4V-Sc7y3guVK6i6iVhwgfuz-tZZmEmsa_xS_Y4UR2kq3Epu-ELZ6RHS29wxojakwsaT_17ETrbGRuqaNYGgk__rSO7xC-F4&usqp=CAc" 
+                 alt="Designer Shirt" height="350" width="100">
+            <h2>Designer Shirt</h2>
+            <p>Starting Bid: $50</p>
+            <p>Current Bid: $<span class="current-bid">75</span></p>
+            <label for="shirt1-bid">Enter Your Bid:</label>
+            <input type="number" id="shirt1-bid" class="new-bid" name="shirt1-bid" min="76" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="2">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRzwtsDvrk0cU0Xr9fIDj7ycC0-VTYxAAwnBbg8Ho_CYULJv2PvBdwHcRR8-lR8Jz_nKKfC_kA118hETJ7XjftwFVbPGcYCEsISFf7Z_vJ4izkPtzhvzNNP9QOD8H9yLutpRB1S-Bpakg&usqp=CAc" 
+                 alt="Designer Shirt" height="350" width="100">
+            <h2>Designer Shirt</h2>
+            <p>Starting Bid: $60</p>
+            <p>Current Bid: $<span class="current-bid">85</span></p>
+            <label for="shirt2-bid">Enter Your Bid:</label>
+            <input type="number" id="shirt2-bid" class="new-bid" name="shirt2-bid" min="86" required>
+            <button type="button" onclick="submitBid('item2', 'bid2')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="3">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQKGynk2G7DZSkB1un257cnY4uLxskAUEOZa6pt1JhvWNRBYyM-OWqGK28BPEjDm3Co-7MCoxCcdEJSxpcZ-Gu1TREQcNxz1i6lpcWNcfPFVAZlqG7Tf-5BCUVnPRKt5w3g_gshKALXHQY&usqp=CAc" 
+                 alt="Designer Shirt" height="350" width="100">
+            <h2>Designer Shirt</h2>
+            <p>Starting Bid: $70</p>
+            <p>Current Bid: $<span class="current-bid">90</span></p>
+            <label for="shirt3-bid">Enter Your Bid:</label>
+            <input type="number" id="shirt3-bid" class="new-bid" name="shirt3-bid" min="91" required>
+            <button type="button" onclick="submitBid('item3', 'bid3')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="4">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS1z2s3Uhd3Wb_dcAwr8Jy0VfvBfC0ouG5qPj1q3q_OkKOLqaAcoaZ0RPePJ05htMb3EyQimQoDQBtyTzb409k8SyhxeZFIq4WmRS03DkpRRCghFRw-74MxkZGiRqx8pv7GlfMfJDslGw&usqp=CAc" 
+                 alt="Designer Shirt" height="350" width="100">
+            <h2>Designer Shirt</h2>
+            <p>Starting Bid: $120</p>
+            <p>Current Bid: $<span class="current-bid">150</span></p>
+            <label for="jacket1-bid">Enter Your Bid:</label>
+            <input type="number" id="jacket1-bid" class="new-bid" name="jacket1-bid" min="151" required>
+            <button type="button" onclick="submitBid('item4', 'bid4')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="5">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQe65tZYZerA1PdSYFeocb3B0Xzj3rB7fzxAHeutKafeG7P_AI0lZ0xpACimIruHpBf0T2oA1x4LlgRXydKWqykVfSc1tJ84iIUvZn-3WVbgxnKgmj5l2YYCkWoMdWxXP2GPErdMke5Xn0&usqp=CAc" 
+                 alt="Hoodie" height="350" width="100">
+            <h2>Hoodie</h2>
+            <p>Starting Bid: $130</p>
+            <p>Current Bid: $<span class="current-bid">160</span></p>
+            <label for="jacket2-bid">Enter Your Bid:</label>
+            <input type="number" id="jacket2-bid" class="new-bid" name="jacket2-bid" min="161" required>
+            <button type="button" onclick="submitBid('item5', 'bid5')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="6">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSAnKmvPbFBgrWqGgbOQizOCZm5ChpCGLnplsVheqqKz_OPaTpsPJFYygCg3wZXRf_5OOlpExmt-e9cvPRX4cIvU97TT3yZIeLyIv1EhOAm07H_C0JSAjt-2JwO-WAEhRNF7qYprTovCYI&usqp=CAc" 
+                 alt="Jeans" height="350" width="100">
+            <h2>Cargo</h2>
+            <p>Starting Bid: $140</p>
+            <p>Current Bid: $<span class="current-bid">170</span></p>
+            <label for="jacket3-bid">Enter Your Bid:</label>
+            <input type="number" id="jacket3-bid" class="new-bid" name="jacket3-bid" min="171" required>
+            <button type="button" onclick="submitBid('item6', 'bid6')">Submit Bid</button>
+          </article>
+          
+          <article class="item" data-id="7">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEu1HOpMOtRyosT-wt49g3mS_buf6WiIzAHV-H6CD0-LqGRraDx5zn9tGZS6xzkWSo57DnhZuv3VL2ZyvxpFK5UL93JlHzonqCcUFhxIKVSQC_CvVb4I7OFZgoLN1U9ZPkWTecqg&usqp=CAc" 
+                 alt=" Dress" height="350" width="100">
+            <h2> Dress </h2>
+            <p>Starting Bid: $200</p>
+            <p>Current Bid: $<span class="current-bid">230</span></p>
+            <label for="dress1-bid">Enter Your Bid:</label>
+            <input type="number" id="dress1-bid" class="new-bid" name="dress1-bid" min="231" required>
+            <button type="button" onclick="submitBid('item7', 'bid7')">Submit Bid</button>
+          </article>
+          
+
+          <article class="item" data-id="8">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRvLhXO9hphX0yQB2byiM_yyjiJLtNBwga0UFqUGn9tAOyw316v6jLVPQWxyJ8pUas0HACEFejE-coc2ndKz1Z-H6UtYCipyAKtlWFUgBUf6wQXJ-eF00-s5TFczfoIV4DFAe4TaAAwIQ&usqp=CAc" 
+                 alt="Dress" height="350" width="100">
+            <h2>Satin gown</h2>
+            <p>Starting Bid: $220</p>
+            <p>Current Bid: $<span class="current-bid">250</span></p>
+            <label for="dress2-bid">Enter Your Bid:</label>
+            <input type="number" id="dress2-bid" class="new-bid" name="dress2-bid" min="251" required>
+            <button type="button" onclick="submitBid('item8', 'bid8')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="9">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQER-U7jXAZxOX2gm4PUR1HDZuQQkAD9BkZBhPuOz-rEWfteHb40k7pprKD7W5h_HD_llt_YtR4jITyC2yebXdbCcO43aY-WYNK8PLDNRVe6_mqUP7ExQb7iGWxNY4m0iTKEr1TB0KSzc4&usqp=CAc" 
+                 alt="T shirt" height="350" width="100">
+            <h2>T shirt</h2>
+            <p>Starting Bid: $240</p>
+            <p>Current Bid: $<span class="current-bid">270</span></p>
+            <label for="dress3-bid">Enter Your Bid:</label>
+            <input type="number" id="dress3-bid" class="new-bid" name="dress3-bid" min="271" required>
+            <button type="button" onclick="submitBid('item9', 'bid9')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="10">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSAiD8aWKg6Bazi7V6MIpuOySZ80ij7KyAxxdHt5MLygeIFflDzxt6cSUyJ9HOgkRYsgFZj56sXhY3xSxvF0TaBM6wDKL5UC0xTFgu0xDBAmbeVsoO-ilc2oViNhyAjS057oxkEmjY&usqp=CAc" 
+                 alt="Designer Shirt" height="350" width="100">
+            <h2>Long sleeve top </h2>
+            <p>Starting Bid: $80</p>
+            <p>Current Bid: $<span class="current-bid">95</span></p>
+            <label for="shirt4-bid">Enter Your Bid:</label>
+            <input type="number" id="shirt4-bid" class="new-bid" name="shirt4-bid" min="96" required>
+            <button type="button" onclick="submitBid('item10', 'bid10')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="11">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTTFIj2f34HU_rLFv1Rv0A_iHt9puDcTdXA&s" 
+                 alt="Evening Dress" height="350" width="100">
+            <h2>Kids Wear</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="dress4-bid">Enter Your Bid:</label>
+            <input type="number" id="dress4-bid" class="new-bid" name="dress4-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="12">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwqkwNVLpztmn6JZ4qZ-s3OYGgxiqXeve4Q&s" 
+                 alt="Kids Wear" height="350" width="100">
+            <h2>Kids Wear</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="dress5-bid">Enter Your Bid:</label>
+            <input type="number" id="dress5-bid" class="new-bid" name="dress5-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+        
+
+        <article class="item" data-id="13">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTBegWqkdVdj7Y0xcF_KeTLK5rlXw--FUHIQ1YpRGpB_ngCOM7iHdnOmQosvFCUPKBOsNdmXl8sh7URLSCZ2fxV0hVTzzrbyPwJheHl2T81Aw5gUBh43skBwbbyGUILVTWqgVFEKwSrwQ&usqp=CAc" 
+                 alt="Evening Dress" height="350" width="100">
+            <h2>Cord set</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="cordset-bid">Enter Your Bid:</label>
+            <input type="number" id="cordset-bid" name="cordset-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+
+        <article class="item" data-id="14">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjlmR2LrJaiz4pjX3FIn-5_fmVD1nQn_o91AfyFYEOlg00DUg1vwUWUVK3FrAbSh3MsHM_fDHgENA5zHe5lNGyNJnLcS6V7GIH7_LtkFtEEeN5ymmu9dovHw&usqp=CAc" 
+                 alt="Evening Dress" height="350" width="100">
+            <h2>V neck top</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="vnecktop-bid">Enter Your Bid:</label>
+            <input type="number" id="vnecktop-bid" name="vnecktop-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="15">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSoyphwDX6u_vXzNgfN5ckmh4_atWAJsrPma5uWcDkhU94k74tGrcPmp4EmzXGqXvmJ8gsj5HfGZ4ToJkJHnJ3amhrm8cBzmQoblBxZIovKpqLg-FoxMF75sNNnDHmYWsQ9iEIYN3i9Tg&usqp=CAc" 
+                 alt="Evening Dress" height="350" width="100">
+            <h2>Bullmer shirt pant</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="bullmerpant-bid">Enter Your Bid:</label>
+            <input type="number" id="bullmerpant-bid" name="bullmerpant-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+        
+        <article class="item" data-id="16">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQEpiJGh5sCq9OoXcreMPtASD1n9DGpezbsjx05RWSWF35Ofv08-ddHeBOk4QyO2cqfkcmvZAvW7kT7INSEWqCDB62g0vnpp-Rc6BvZ_ThmvbaII_9G4eGPkw&usqp=CAc" 
+                 alt="Evening Dress" height="350" width="100">
+            <h2>Frock</h2>
+            <p>Starting Bid: $260</p>
+            <p>Current Bid: $<span class="current-bid">290</span></p>
+            <label for="frock-bid">Enter Your Bid:</label>
+            <input type="number" id="frock-bid" name="frock-bid" min="291" required>
+            <button type="button" onclick="submitBid('item1', 'bid1')">Submit Bid</button>
+        </article>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clothes Auction. All rights reserved.</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

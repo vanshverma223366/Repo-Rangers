@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-colorful-background-grain-noise-effect-blur-color-background-use_861973-28280.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.signin-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease;          
+}
+
+h2 {
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2193b0;
+    box-shadow: 0 0 5px rgba(33, 147, 176, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
