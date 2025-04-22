@@ -1,0 +1,54 @@
+app:
+  name: Online Auction Platform
+  version: 1.0
+  year: 2024
+  homepage: online auction platform2.html
+  description: >
+    A web-based auction platform allowing users to browse, bid, and buy a variety of items across categories.
+
+pages:
+  - signin: online auction platform.html
+  - welcome: online auction platform2.html
+  - categories: online auction platform3.html
+  - clothes: online auction platform4.html
+  - computers: online auction platform5.html
+  - sports: online auction platform6.html
+  - wine: online auction platform 10.html
+
+categories:
+  - name: Clothes
+    page: online auction platform4.html
+  - name: Computers
+    page: online auction platform5.html
+  - name: Sports Gear
+    page: online auction platform6.html
+  - name: Wine Collection
+    page: online auction platform 10.html
+
+features:
+  - Sign-in form with email/password
+  - Category-based browsing
+  - Bidding system with starting and current bid
+  - Item image previews
+  - Client-side form validation
+  - Simple responsive layout
+
+auction_settings:
+  default_starting_bid: 600
+  min_bid_increment: 50
+  currency: USD
+  input_validation: true
+
+scripts:
+  - script1.js  # Sign-in and validation logic
+  - script2.js  # Bid submission and auction logic
+
+stylesheets:
+  - style.css
+  - style2.css
+  - style3.css
+  - style5.css
+
+footer:
+  copyright:
+    text: "© 2024 Online Auction Platform. All rights reserved."

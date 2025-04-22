@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Online Auction | Sign In</title>
     <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="script1.js" defer></script> <!-- Using defer to ensure script runs after DOM loads -->
 </head>
 <body>
-    <div class="signin-container">
-        <h2>Sign In</h2>
-        <form id="signinForm" action="online auction platform2.html">
-            <input type="email" id="email" name="email" placeholder="Email Address" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <button type="submit">Sign In </button>
-        </form>
-        <div class="forgot-password">
-            <a href="online auction platform14.html"><u>Forgot Password?</u></a>
+    <main>
+        <div class="signin-container">
+            <h2 class="signin-title">Welcome Back</h2>
+            <p class="signin-subtext">Sign in to your account to continue</p>
+            <form id="signinForm" action="online auction platform2.html">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="signin-button">Sign In</button>
+            </form>
+            <div class="forgot-password">
+                <a href="online auction platform14.html"><u>Forgot Password?</u></a>
+            </div>
+            <div class="create-account">
+                <p>Don't have an account? <a href="signup.html"><u>Sign Up</u></a></p>
+            </div>
         </div>
-    </div>
-    
+    </main>
 </body> 
 </html>
