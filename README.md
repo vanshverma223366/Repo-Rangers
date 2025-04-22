@@ -41,7 +41,7 @@ To view the project locally:
 3.⁠ ⁠Proceed through the sign-in process to explore the platform.
 
 
-## 👤 Author
+## 👤 Repo-Owner
 
 *Vansh Verma*  
 (vanshverma223366)
