@@ -1,8 +1,6 @@
 # Repo-Rangers
 
-
 This is a simple web-based *Online Auction Platform* designed using *HTML, **CSS, and **JavaScript*. The platform allows users to sign in, browse auction categories, and explore items within each category.
-
 
 
 ## 📌 Features
@@ -27,8 +25,22 @@ This is a simple web-based *Online Auction Platform* designed using *HTML, **CSS
 ├── online auction platform2.html         # Welcome page
 ├── online auction platform3.html         # Categories page
 ├── online auction platform4.html         # Category details page
+├── online auction platform5.html         # Category details page
+├── online auction platform6.html         # Category details page
+├── online auction platform7.html         # Category details page
+├── online auction platform8.html         # Category details page
+├── online auction platform9.html         # Category details page
+├── online auction platform10.html         # Category details page
+├── online auction platform11.html         # Category details page
+├── online auction platform12.html         # Category details page
+├── online auction platform13.html         # Category details page
+├── style.css                            # Stylesheet
+├── style2.css                            # Stylesheet
+├── style3.css                            # Stylesheet
+├── style4.css                            # Stylesheet
 ├── style5.css                            # Stylesheet
 ├── script1.js                            # JavaScript functionality
+├── script2.js                            # JavaScript functionality
 
 
 
